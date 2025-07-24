@@ -1,0 +1,140 @@
+/* Grundlegende Einstellungen */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #1e1e2f, #111119);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Container-Zentrale */
+.container {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Titel */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+/* Karten mit Glas-Look */
+.card {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Eingabefelder */
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+/* Liste der Transaktionen */
+ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.95rem;
+}
+
+li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Saldo */
+#balance {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #facc15;
+}
+
+/* Responsive Chart */
+canvas {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.remove {
+  align-items: center;
+  background: none;
+  color: #f87171;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+
+
+.tracker-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* wichtig für mobile Ansicht */
+}
+
+.tracker-section {
+  flex: 1 1 400px;
+  max-width: 480px;
+}
+
+/* Optional: zentrierte Überschrift je Tracker */
+.tracker-section h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
