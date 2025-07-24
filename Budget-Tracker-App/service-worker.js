@@ -1,6 +1,6 @@
 const CACHE_NAME = 'budget-app-cache-v1';
 const urlsToCache = [
-  '/inde.html',
+  '/index.html',
   '/budget.css',
   '/budget.js',
   '/manifest.json',
