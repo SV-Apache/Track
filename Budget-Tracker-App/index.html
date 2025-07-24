@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="budget.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Manifest einbinden -->
+ <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4CAF50">
+
+</head>
+<body>
+  
+  <div class="tracker-wrapper">
+  <div class="tracker-section">
+    <h1>💳 Budget Tracker – Gregory </h1>
+    <div id="tracker-privat"></div>
+  </div>
+
+  <div class="tracker-section">
+    <h1>💼 Budget Tracker – Tamara</h1>
+    <div id="tracker-business"></div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+
+  
+
+  <script src="budget.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('✅ Service Worker registriert:', reg))
+        .catch(err => console.error('❌ Service Worker Fehler:', err));
+    });
+  }
+</script>
+
+</body>
+</html>
